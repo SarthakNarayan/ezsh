@@ -8,15 +8,10 @@ Quickly install and setup zsh and oh-my-zsh (https://github.com/robbyrussell/oh-
 * zsh-syntax-highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
 * history-substring-search (https://github.com/zsh-users/zsh-history-substring-search)
 * fzf (https://github.com/junegunn/fzf)
-* k (https://github.com/supercrabtree/k)
 
 Sets following useful aliases and ohmyzsh plugins. **You can add more or overwrite these in your personal zsh config files under `~/.config/ezsh/zshrc/`** 
-* alias k="k -h"	  - show human readable filesizes, in kb, mb etc
 * [x="extract"](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/extract)         - extract any compressed files
 * [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)   - quickly jump to most visited directories
-* [web-search](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search)    - search on the web from cli
-* [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)                - easily prefix your commands with sudo by pressing `esc` twice
-* [systemd](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/systemd)          - many useful aliases for systemd
 * myip - (wget -qO- https://wtfismyip.com/text)       - what's my ip: quickly find out external IP
 
 ## Demo

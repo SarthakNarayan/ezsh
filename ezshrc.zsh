@@ -78,13 +78,9 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     history-substring-search
-    screen
     systemd
-    web-search
-    k
     extract
     z
-    sudo
     )
 #plugins+=(zsh-nvm)
 
