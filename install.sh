@@ -104,7 +104,7 @@ else
     echo -e "\nNot copying bash_history to zsh_history, as --cp-hist or -c is not supplied\n"
 fi
 
-# source ~/.zshrc
-echo -e "\Run sudo change_shell.sh to change the default shell to zsh \n"
+echo "Updating oh my zsh"
+/bin/zsh -i -c 'omz update'
 
-
+echo -e "Run the following command to change the default shell to zsh \n\n> sudo chsh -s $(which zsh)"

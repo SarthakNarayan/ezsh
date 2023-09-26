@@ -5,5 +5,5 @@ alias history="history -t '%F'"
 alias cp="cp -v"
 alias mv="mv -v"
 alias path="print -l $path" #print path in a human readable way
-alias sc="source ~/ezsh/ezshrc.zsh"
-alias rc="vim ~/ezsh/ezshrc.zsh"
+alias sc="source ~/.zshrc"
+alias rc="vim ~/.zshrc"
