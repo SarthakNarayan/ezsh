@@ -20,14 +20,16 @@ POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load time)
 
-# more prompt elements that are suggested
-# (public_ip docker_machine pyenv nvm)          https://github.com/bhilburn/powerlevel9k#prompt-customization
-# Note: using public_ip is cool but when connection is down prompt waits for 10-20 seconds
+
+# Show prompt segment "kubecontext" only when the command you are typing invokes one of these tools.
+# reference: https://github.com/romkatv/powerlevel10k#show-on-command
+typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens'
+
+# Other prompts: https://github.com/romkatv/powerlevel10k#batteries-included
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh os_icon context dir vcs)
-
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load kubecontext time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 
@@ -115,6 +117,10 @@ plugins=(
 
 # Add to PATH to Install and run programs with "pip install --user"
 export PATH=$PATH:~/.local/bin
+
+# Add homebrew location to path
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+
 export EDITOR="vim"
 export VISUAL="vim"
 export PATH=$PATH:~/.config/ezsh/bin
@@ -138,6 +144,8 @@ alias history="history -t '%F'"
 alias cp="cp -v"
 alias mv="mv -v"
 alias path="print -l $path" #print path in a human readable way
+alias sc="source ~/ezsh/ezshrc.zsh"
+alias rc="vim ~/ezsh/ezshrc.zsh"
 
 # change it to true if you want to use vim mode in terminal
 export VIM_MODE=false
@@ -182,6 +190,4 @@ if $VIM_MODE; then
     echo -ne '\e[5 q' # Use beam shape cursor on startup.
     preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-else
-	echo "VIM_MODE is false"
 fi
