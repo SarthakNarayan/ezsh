@@ -39,6 +39,12 @@ This will install the setup under `~/.config/ezsh/`
 Change your terminal's fonts to either "RobotoMono Nerd Font" or "Hack Nerd Font" or "DejaVu Sans Mono Nerd Fonts".
 You can also manually install Nerd Fonts of your choice.
 
+## Sourcing new changes made to `ezshrc.zsh`
+
+```
+source ~/ezsh/ezshrc.zsh
+```
+
 ## Notes
 * If you are already using zsh, your zsh config will be backed up to .zshrc-backup-date
 
