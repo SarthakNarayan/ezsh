@@ -63,13 +63,6 @@ else
     git clone --depth=1 https://github.com/zsh-users/zsh-completions ~/.config/ezsh/oh-my-zsh/custom/plugins/zsh-completions
 fi
 
-if [ -d ~/.config/ezsh/oh-my-zsh/custom/plugins/zsh-history-substring-search ]; then
-    cd ~/.config/ezsh/oh-my-zsh/custom/plugins/zsh-history-substring-search && git pull
-else
-    git clone --depth=1 https://github.com/zsh-users/zsh-history-substring-search ~/.config/ezsh/oh-my-zsh/custom/plugins/zsh-history-substring-search
-fi
-
-
 # INSTALL FONTS
 
 echo -e "Installing Nerd Fonts version of Hack, Roboto Mono, DejaVu Sans Mono\n"
@@ -92,12 +85,6 @@ if [ -d ~/.~/.config/ezsh/fzf ]; then
 else
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.config/ezsh/fzf
     ~/.config/ezsh/fzf/install --all --key-bindings --completion --no-update-rc
-fi
-
-if [ -d ~/.config/ezsh/oh-my-zsh/custom/plugins/k ]; then
-    cd ~/.config/ezsh/oh-my-zsh/custom/plugins/k && git pull
-else
-    git clone --depth 1 https://github.com/supercrabtree/k ~/.config/ezsh/oh-my-zsh/custom/plugins/k
 fi
 
 if [[ $1 == "--cp-hist" ]] || [[ $1 == "-c" ]]; then

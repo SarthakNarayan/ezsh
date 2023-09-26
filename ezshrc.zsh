@@ -77,8 +77,6 @@ plugins=(
     zsh-completions
     zsh-autosuggestions
     zsh-syntax-highlighting
-    history-substring-search
-    systemd
     extract
     z
     )
