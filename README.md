@@ -34,12 +34,6 @@ You can also manually install Nerd Fonts of your choice.
 source ~/.zshrc
 ```
 
-or if this doesn't work then
-
-```
-source ~/ezsh/ezshrc.zsh
-```
-
 ## Notes
 * If you are already using zsh, your zsh config will be backed up to .zshrc-backup-date
 

@@ -6,7 +6,7 @@
 # Place all your .zshrc configurations / overrides in a single or multiple files under ~/ezsh/zshrc/ folder
 
 # Load ezsh configurations
-source "$HOME/.config/ezsh/ezshrc.zsh"
+source "$HOME/ezsh/ezshrc.zsh"
 
 # Any zshrc configurations under the folder ~/ezsh/zshrc/ will override the default ezsh configs.
 # Place all of your personal configurations over there
