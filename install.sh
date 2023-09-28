@@ -107,4 +107,4 @@ fi
 echo "Updating oh my zsh"
 /bin/zsh -i -c 'omz update'
 
-echo -e "Run the following command to change the default shell to zsh \n\n> sudo chsh -s $(which zsh)"
+echo -e "Run the following command to change the default shell to zsh \n\n> sudo chsh -s $(which zsh) $USER"
