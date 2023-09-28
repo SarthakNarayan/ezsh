@@ -29,7 +29,7 @@ typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|terragr
 
 # Other prompts: https://github.com/romkatv/powerlevel10k#batteries-included
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh os_icon context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load kubecontext aws time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
