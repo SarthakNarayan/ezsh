@@ -8,7 +8,10 @@ Quickly install and setup zsh and oh-my-zsh (https://github.com/robbyrussell/oh-
 * zsh-syntax-highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
 * fzf (https://github.com/junegunn/fzf)
 
-Sets following useful aliases and ohmyzsh plugins. **You can add more or overwrite these in your personal zsh config files under `~/.config/ezsh/zshrc/`** 
+> NOTE: The plugins are installed at `~/.config/ezsh/oh-my-zsh`
+
+Sets following useful aliases and ohmyzsh plugins. 
+
 * [x="extract"](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/extract)         - extract any compressed files
 * [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)   - quickly jump to most visited directories
 * myip - (wget -qO- https://wtfismyip.com/text)       - what's my ip: quickly find out external IP
@@ -41,8 +44,9 @@ source ~/.zshrc
 
 * All oh-my-zsh plugins are installed under `~/.config/ezsh/oh-my-zsh/` plugin, Other tools (fzf) are installed in `~/.config/ezsh/`
 
-* The look of the shell can be very easily [customised](https://github.com/bhilburn/powerlevel9k#prompt-customization) by overwriting POWERLEVEL10K settings
-in your personal config file under `~/.config/ezsh/zshrc/`. 
+* The look of the shell can be very easily [customised](https://github.com/bhilburn/powerlevel9k#prompt-customization) by overwriting POWERLEVEL10K settings in your personal config file under `~/.config/ezsh/zshrc/` or `~/.config/ezsh/ezshrc.zsh` 
+
+* To add aliases, exports or other things to the shell use `~/.config/ezsh/ezshrc.zsh` or `~/.config/ezsh/zshrc`.
 
 * You can also refer to the sample `.p10k.zsh` file in the repository to know more about the configuration options.
 
