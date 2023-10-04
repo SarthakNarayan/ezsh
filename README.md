@@ -23,7 +23,7 @@ Requirements:
 * `python3` or `python` is required to run option '-c' which copies history from .bash_history
 
 ``` bash
-git clone https://github.com/SarthakNarayan/ezsh
+git clone https://github.com/SarthakNarayan/ezsh $HOME
 cd ezsh
 ./install.sh
 ```
