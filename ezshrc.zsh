@@ -81,6 +81,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     extract
+    kubectl
     z
     )
 #plugins+=(zsh-nvm)
@@ -128,6 +129,5 @@ autoload -U compinit && compinit -C -d ~/.cache/zsh/.zcompdump        # zsh-comp
 SAVEHIST=50000      #save upto 50,000 lines in history. oh-my-zsh default is 10,000
 #setopt hist_ignore_all_dups     # dont record duplicated entries in history during a single session
 
-
-
-
+# kubectl autocompletion
+source <(kubectl completion zsh)

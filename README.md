@@ -23,8 +23,8 @@ Requirements:
 * `python3` or `python` is required to run option '-c' which copies history from .bash_history
 
 ``` bash
-git clone https://github.com/SarthakNarayan/ezsh $HOME
-cd ezsh
+git clone https://github.com/SarthakNarayan/ezsh $HOME/ezsh
+cd $HOME/ezsh
 ./install.sh
 ```
 This will install the setup under `~/.config/ezsh/`
