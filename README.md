@@ -51,3 +51,5 @@ source ~/.zshrc
 * You can also refer to the sample `.p10k.zsh` file in the repository to know more about the configuration options.
 
 * If you want to add modifications to the zshrc then add files to the `zshrc` folder or modify the existing files.
+
+* If you want to enable vim mode after installation then change `VIM_MODE` to `true` in `~/.config/ezshrc/zshrc/vimmode.zsh`.

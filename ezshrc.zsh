@@ -84,7 +84,8 @@ plugins=(
     kubectl
     z
     )
-#plugins+=(zsh-nvm)
+# enable vim mode in zsh
+plugins+=(vi-mode)
 
 # source $ZSH/oh-my-zsh.sh          # This is now run in .zshrc after importing user configs from ~/.config/ezsh/zshrc/* files 
 
