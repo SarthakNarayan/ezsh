@@ -30,6 +30,8 @@ typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|terragr
 # Other prompts: https://github.com/romkatv/powerlevel10k#batteries-included
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+# if you want to have public ip while working on a machine
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir public_ip vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load kubecontext aws time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
