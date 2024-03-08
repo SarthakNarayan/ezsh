@@ -32,7 +32,7 @@ typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|terragr
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 # if you want to have public ip while working on a machine
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir public_ip vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load kubecontext aws time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs load kubecontext aws virtualenv time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 
@@ -85,9 +85,9 @@ plugins=(
     extract
     kubectl
     z
+    vi-mode
+    virtualenv
     )
-# enable vim mode in zsh
-plugins+=(vi-mode)
 
 # source $ZSH/oh-my-zsh.sh          # This is now run in .zshrc after importing user configs from ~/.config/ezsh/zshrc/* files 
 
