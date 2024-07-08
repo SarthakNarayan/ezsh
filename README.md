@@ -44,11 +44,11 @@ source ~/.zshrc
 
 * All oh-my-zsh plugins are installed under `~/.config/ezsh/oh-my-zsh/` plugin, Other tools (fzf) are installed in `~/.config/ezsh/`
 
-* The look of the shell can be very easily [customised](https://github.com/bhilburn/powerlevel9k#prompt-customization) by overwriting POWERLEVEL10K settings in your personal config file under `~/.config/ezsh/zshrc/` or `~/.config/ezsh/ezshrc.zsh` 
-
 * To add aliases, exports or other things to the shell use `~/.config/ezsh/ezshrc.zsh` or `~/.config/ezsh/zshrc`.
 
-* You can also refer to the sample `.p10k.zsh` file in the repository to know more about the configuration options.
+* The look of the shell can be very easily [customised](https://github.com/bhilburn/powerlevel9k#prompt-customization) by overwriting POWERLEVEL10K settings in your personal config file under `~/.config/ezsh/prompt/prompt_config.zsh`.
+  * If you want to configure the terminal prompt from scratch, run `p10 configure`. This will create a new `.p10k.zsh` file and source it in the `~/.zshrc` file at the end. If you want to stick to this configuration, I would recommend to move the newly generate `~/.p10.zsh` file to `~/.config/ezshrc/prompt` and source it from `~/.config/ezshrc/prompt/promt_config.zsh` file like it is being done currently.
+  * If you want to look for items to customize the left and right elements in the prompts then refer the `.p10.zsh` file in the directory.
 
 * If you want to add modifications to the zshrc then add files to the `zshrc` folder or modify the existing files.
 
