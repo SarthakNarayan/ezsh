@@ -37,6 +37,11 @@ cp -f ezshrc.zsh ~/.config/ezsh/
 
 mkdir -p ~/.config/ezsh/zshrc         # PLACE YOUR ZSHRC CONFIGURATIONS OVER THERE
 cp -f -r ./zshrc/* ~/.config/ezsh/zshrc # COPYING custom configuration to the zshrc directory in config
+
+mkdir -p ~/.config/ezsh/prompt
+cp -f -r ./prompt/* ~/.config/ezsh/prompt # COPYING prompt configuration
+cp -f -r ./prompt/.p10k.zsh ~/.config/ezsh/prompt
+
 mkdir -p ~/.cache/zsh/                # this will be used to store .zcompdump zsh completion cache files which normally clutter $HOME
 
 if [ -f ~/.zcompdump ]; then
