@@ -47,22 +47,11 @@ source ~/.zshrc
 * To add aliases, exports or other things to the shell use `~/.config/ezsh/ezshrc.zsh` or `~/.config/ezsh/zshrc`.
 
 * The look of the shell can be very easily [customised](https://github.com/bhilburn/powerlevel9k#prompt-customization) by overwriting POWERLEVEL10K settings in your personal config file under `~/.config/ezsh/prompt/prompt_config.zsh`.
-  * If you want to configure the terminal prompt from scratch, run `p10 configure`. This will create a new `.p10k.zsh` file and source it in the `~/.zshrc` file at the end. If you want to stick to this configuration, I would recommend to move the newly generate `~/.p10.zsh` file to `~/.config/ezshrc/prompt` and source it from `~/.config/ezshrc/prompt/promt_config.zsh` file like it is being done currently.
+  * If you want to configure the terminal prompt from scratch, run `p10k configure`. This will create a new `.p10k.zsh` file and source it in the `~/.zshrc` file at the end. If you want to stick to this configuration, I would recommend to move the newly generate `~/.p10.zsh` file to `~/.config/ezshrc/prompt` and source it from `~/.config/ezshrc/prompt/promt_config.zsh` file like it is being done currently.
   * If you want to look for items to customize the left and right elements in the prompts then refer the `.p10.zsh` file in the directory.
 
 * If you want to add modifications to the zshrc then add files to the `zshrc` folder or modify the existing files.
 
 * If you want to enable vim mode after installation then change `VIM_MODE` to `true` in `~/.config/ezshrc/zshrc/vimmode.zsh`.
 
-## Useful `fzf` commands
-* We can use either arrow keys or `CTRL + K` and `CTRL + J` to move up and down the selection.
-* Search from all the files in the current directory: `fzf` or `CTRL + t`.
-* History search: `CTRL + R`.
-* We can use fzf autocompletion with any command by using `command **` and then **pressing tab**.
-  * For example if we want to delete a file from a folder then `rm **` and then pressing tab will open up a fuzzy finder view. 
-  * `cd **` into a particular directory.
-  * `kill -9 **` to search for a particular process to kill.
-* Another great use case of fzf is filtering logs. For example we can store the logs in a file `kubectl logs pod/<pod-name> > logs.txt`. We can now filter through it using `cat logs.txt | fzf`.
-* Describing pods or finding logs in kubernetes:
-  * `kubectl get pods | fzf | awk '{print $1}' | xargs -I {} kubectl describe pod {}` or `kubectl get pods | fzf | awk '{print $1}' | xargs -n 1 kubectl describe pod`
-  * `kubectl get pods | fzf | awk '{print $1}' | xargs -I {} kubectl logs {}`
+> Take a look at the wiki section of the repository to know more about tools that I use.
