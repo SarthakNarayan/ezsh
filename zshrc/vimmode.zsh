@@ -18,4 +18,7 @@ if $VIM_MODE; then
   # https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html
   bindkey -M vicmd 'H' beginning-of-line
   bindkey -M vicmd 'L' end-of-line
+  bindkey -M vicmd 'C' kill-line # prevent from being added to system clipboard
+  bindkey -M vicmd 'dd' kill-region # prevent from being added to system clipboard
+  bindkey -M vicmd 'x' backward-delete-char # prevent from being added to system clipboard
 fi
