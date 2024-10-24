@@ -3,6 +3,7 @@ export VIM_MODE=true
 
 if $VIM_MODE; then
 	echo "VIM_MODE is true"
+
   bindkey -v
 
   # if you have a low keytimeout value it is not possible to use jk for escaping from insert mode
@@ -18,7 +19,13 @@ if $VIM_MODE; then
   # https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html
   bindkey -M vicmd 'H' beginning-of-line
   bindkey -M vicmd 'L' end-of-line
-  bindkey -M vicmd 'C' kill-line # prevent from being added to system clipboard
   bindkey -M vicmd 'dd' kill-region # prevent from being added to system clipboard
-  bindkey -M vicmd 'x' backward-delete-char # prevent from being added to system clipboard
+  bindkey -M vicmd 'x' delete-char # prevent from being added to system clipboard
+
+  zle -N kill-line-and-insert
+  kill-line-and-insert() {
+    zle kill-line
+    zle vi-insert
+  }
+  bindkey -M vicmd 'C' kill-line-and-insert
 fi
